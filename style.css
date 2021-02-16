@@ -6,7 +6,7 @@ body {
 
 #particles-js {
   height: 100%;
-  background: black;
+  background: #070707;
 }
 
 ul {
@@ -29,8 +29,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
-  background-color: #2d3436;
-  background-image: linear-gradient(315deg, #000000 0%, #2d3436 74%);
+  background-color: #161616;
+  background-image: linear-gradient(315deg,  #000000, #262b2c, #262b2c, #000000);
   font-weight: 600;
   letter-spacing: 2px;
   font-family: calibri;
@@ -39,7 +39,7 @@ nav {
   left: 0;
   width: 100%;
   box-sizing: border-box;
-  padding: 10px 50px;
+  padding: 2px 45px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
   z-index: 1;
 }
@@ -65,9 +65,10 @@ nav {
 .toggle {
   display: none;
 }
-.active a,
+
 .menu li a:hover {
   background-color: black;
+  border-radius: 10px;
   color: #fff !important;
   font-weight: bold;
   transition: all ease 0.4s;
@@ -119,9 +120,11 @@ nav {
   align-items: center;
   background-color: #292929;
   color: #ffffff;
+  border-radius: 10px;
 }
 .name a:hover {
-  background-color: #131313;
+  background-color: rgb(226, 222, 222);
+  color: black;
   transition: all ease 0.5s;
 }
 .black-line {
@@ -159,10 +162,10 @@ nav {
 }
 .social i {
   color: rgba(18, 17, 17, 0.4);
-  font-size: 22px;
-  filter: invert(1);
+  font-size: 25px;
+  filter: invert(2);
 }
-.social a:hover i {
+.social i:hover {
   color: #17d1ac;
   transition: all ease 0.5s;
 }
@@ -170,29 +173,26 @@ nav {
 #about {
   width: 100%;
   height: 100vh;
-  background-color: #161616;
+  background-color: #242323;
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 50px 5% 0 5%;
+  justify-content: center;
+  padding: 0 5% 0 5%;
   position: relative;
-  margin-top: -60px;
+  margin-top: -70px;
 }
-.about-model {
-  margin-bottom: 0;
-  margin-right: 50px;
-}
+
 .about-text {
   font-family: system-ui;
   width: 50%;
 }
 .about-text h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #17d1ac;
 }
 .about-text h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #ffffff;
   font-weight: 400;
 }
@@ -205,9 +205,12 @@ h2 {
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.9);
 }
+
+/*
 .about-text button {
   width: 180px;
   height: 40px;
+  font-size: 0.9rem;
   border-radius: 20px;
   border: none;
   outline: none;
@@ -215,8 +218,10 @@ h2 {
 }
 .about-text button:hover {
   background-color: #ffffff;
+  cursor: pointer;
   transition: all ease 0.3s;
 }
+*/
 
 #portfolio {
   width: 100%;
@@ -237,8 +242,8 @@ h2 {
   font-weight: 400;
   padding: 10px 20px;
   background-color: #292929;
+  border-radius: 10px;
   letter-spacing: 2px;
-  border-radius: 3px;
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
 }
 .p-box {
@@ -308,19 +313,23 @@ h2 {
   letter-spacing: 4px;
   border-bottom: 2px solid #1e1e1e;
 }
-#contact-btn button {
+#contact-btn a{
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: calibri;
+  text-align: center;
   width: 150px;
-  height: 40px;
+  height: 30px;
+  padding: 7px;
   margin: 10px;
   background-color: #1e1e1e;
   border: none;
   outline: none;
+  border-radius: 5px;
+  cursor: pointer;
   box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.2);
 }
-#contact-btn button:hover {
+#contact-btn a:hover {
   background-color: #17d1ac;
   color: #000000;
   transition: all ease 0.5s;
@@ -500,7 +509,8 @@ h2 {
     content: "\f0c9";
     font-family: fontAwesome;
     line-height: 0px;
-    margin-left: -30px;
+    margin-left: -20px;
+    cursor: pointer;
   }
   .toggle.active:before {
     content: "\f00d";
@@ -514,13 +524,14 @@ h2 {
     width: 100%;
     height: auto;
     box-sizing: border-box;
-    background-color: #0f0f0f;
+    background-color: #131212;
     top: 50px;
     left: 0;
     transition: 0.5s;
     overflow: hidden;
     display: none !important;
     border: 3px solid #1f1f1f;
+    cursor: pointer;
   }
 
   nav ul li a {
@@ -586,7 +597,6 @@ h2 {
     border: none;
     background-color: #262626 !important;
     padding: 10px;
-    box-sizing: border-box;
     height: 40px;
   }
   textarea {
@@ -634,3 +644,5 @@ h2 {
     height: 50px;
   }
 }
+
+
